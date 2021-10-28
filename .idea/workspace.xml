@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d02cc1b3-94f3-4e90-8e65-fb22282e644b" name="Changes" comment="Up-To-Date">
-      <change afterPath="$PROJECT_DIR$/Reponses.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/taches.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/moda_tdd_oct2021_LAFORGE/AllTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/moda_tdd_oct2021_LAFORGE/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/moda_tdd_oct2021_LAFORGE/Dictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/moda_tdd_oct2021_LAFORGE/DictionaryParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/moda_tdd_oct2021_LAFORGE/DictionaryParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/TaskList.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/moda_tdd_oct2021_LAFORGE/DictionaryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/moda_tdd_oct2021_LAFORGE/DictionaryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reponses.md" beforeDir="false" afterPath="$PROJECT_DIR$/Reponses.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/taches.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/taches.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +207,7 @@
       <workItem from="1635408019490" duration="2469000" />
       <workItem from="1635410712162" duration="434000" />
       <workItem from="1635411181874" duration="11191000" />
-      <workItem from="1635423143392" duration="5186000" />
+      <workItem from="1635423143392" duration="5692000" />
     </task>
     <task id="LOCAL-00001" summary="Up-To-Date">
       <created>1635409676665</created>
