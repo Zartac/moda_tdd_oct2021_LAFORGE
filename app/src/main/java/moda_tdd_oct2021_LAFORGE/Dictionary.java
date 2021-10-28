@@ -21,15 +21,6 @@ public class Dictionary {
         return this.name.isEmpty();
     }
 
-    public String getTranslation(String name) {
-        for(int i=0; i<translations.values().size();i++){
-            if(translations.keySet().contains(name)) {
-                return this.translations.get(name).get(i) ;
-            }
-        }
-        return name;
-    }
-
     public void addTranslation(String name, String translated) {
         if(this.translations.containsKey(name)){
             this.translations.get(name).add(translated);
@@ -41,7 +32,11 @@ public class Dictionary {
         }
     }
 
-    public List<String> getMultipleTranslation(){
-
+    public List<String> getTranslation(String name){
+        ArrayList<String> l = new ArrayList<>();
+        for(int i=0;i<this.translations.get(name).size();i++){
+            l.add(this.translations.get(name).get(i));
+        }
+        return l;
     }
 }

@@ -21,12 +21,14 @@ public class DictionaryTest {
     public void testDictionaryNotEmpty(){
         assertThat(dict.isEmpty(), equalTo(false));
     }
-    @Test public void testOneTranslation() {
+    @Test
+    public void testOneTranslation() {
         dict.addTranslation("contre", "against");
         dict.addTranslation("pour","for");
+        dict.addTranslation("pour","non");
         //dict.addTranslation("pour", "in the goal of");
-        assertThat(dict.getTranslation("contre"), equalTo("against"));
-        assertThat(dict.getTranslation("pour"), equalTo("for"));
+        assertThat(dict.getTranslation("contre"), containsInAnyOrder("against"));
+        assertThat(dict.getTranslation("pour"), containsInAnyOrder("for", "non"));
         //assertThat(dict.getTranslation("pour"), equalTo("in the goal of"));
     }
 }
