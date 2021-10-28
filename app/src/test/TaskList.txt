@@ -1,5 +1,0 @@
-[X] 1- Test sur le getName()
-[X] 2- Test sur le isEmpty()
-[X] 3- description de la tâche
-[X] 4- description de la tâche
-[X] 5- description de la tâche

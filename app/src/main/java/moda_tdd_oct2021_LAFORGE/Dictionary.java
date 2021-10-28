@@ -3,7 +3,7 @@ package moda_tdd_oct2021_LAFORGE;
 import java.util.HashMap;
 import java.util.*;
 
-public class Dictionary {
+public class Dictionary implements IDictionary {
     private Map<String, List<String>> translations;
     private  String name;
     public Dictionary(String name){

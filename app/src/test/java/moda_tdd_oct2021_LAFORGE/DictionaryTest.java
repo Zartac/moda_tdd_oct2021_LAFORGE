@@ -1,6 +1,6 @@
 package moda_tdd_oct2021_LAFORGE;
 
-import org.junit.Before;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -38,5 +38,9 @@ public class DictionaryTest {
     public void testTranslationInverse(){
         assertThat(dict.translationInverse("for"), equalTo("pour"));
         assertThat(dict.translationInverse("non"), equalTo("pour"));
+    }
+    @AfterAll
+    static void vider(){
+        System.gc();
     }
 }
