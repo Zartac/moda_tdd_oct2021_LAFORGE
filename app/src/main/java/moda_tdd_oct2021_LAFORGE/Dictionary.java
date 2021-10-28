@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.*;
 
 public class Dictionary {
-    private Map<String, String> translations;
+    private Map<String, List<String>> translations;
     private  String name;
     public Dictionary(String name){
         this.name=name;
@@ -22,11 +22,26 @@ public class Dictionary {
     }
 
     public String getTranslation(String name) {
-        for(String s : translations.keySet()) if(s.equals(name)) return this.translations.get(s) ;
+        for(int i=0; i<translations.values().size();i++){
+            if(translations.keySet().contains(name)) {
+                return this.translations.get(name).get(i) ;
+            }
+        }
         return name;
     }
 
     public void addTranslation(String name, String translated) {
-        this.translations.put(name, translated);
+        if(this.translations.containsKey(name)){
+            this.translations.get(name).add(translated);
+        }
+        else{
+            ArrayList<String> l = new ArrayList<>();
+            l.add(translated);
+            this.translations.put(name, l);
+        }
+    }
+
+    public List<String> getMultipleTranslation(){
+
     }
 }

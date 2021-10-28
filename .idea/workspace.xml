@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d02cc1b3-94f3-4e90-8e65-fb22282e644b" name="Changes" comment="Up-To-Date">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/moda_tdd_oct2021_LAFORGE/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/moda_tdd_oct2021_LAFORGE/Dictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/TaskList.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/TaskList.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/moda_tdd_oct2021_LAFORGE/DictionaryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/moda_tdd_oct2021_LAFORGE/DictionaryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,7 +203,7 @@
       <updated>1635408016106</updated>
       <workItem from="1635408019490" duration="2469000" />
       <workItem from="1635410712162" duration="434000" />
-      <workItem from="1635411181874" duration="5916000" />
+      <workItem from="1635411181874" duration="11191000" />
     </task>
     <task id="LOCAL-00001" summary="Up-To-Date">
       <created>1635409676665</created>

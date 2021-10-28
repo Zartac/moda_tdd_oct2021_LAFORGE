@@ -7,8 +7,12 @@ import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
 
 public class DictionaryTest {
+
+    @Before
+    public void initialize () {
+        Dictionary dict = new Dictionary("Example");
+    }
     Dictionary dict = new Dictionary("Example");
-    Dictionary waiter = new Dictionary();
     @Test
     public void testDictionaryName() {
         assertThat(dict.getName(), equalTo("Example"));
@@ -20,7 +24,9 @@ public class DictionaryTest {
     @Test public void testOneTranslation() {
         dict.addTranslation("contre", "against");
         dict.addTranslation("pour","for");
+        //dict.addTranslation("pour", "in the goal of");
         assertThat(dict.getTranslation("contre"), equalTo("against"));
-        assertThat(dict.getTranslation("pour"), not(equalTo("against")));
+        assertThat(dict.getTranslation("pour"), equalTo("for"));
+        //assertThat(dict.getTranslation("pour"), equalTo("in the goal of"));
     }
 }
