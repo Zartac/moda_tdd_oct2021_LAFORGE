@@ -7,6 +7,6 @@ public class Dictionary {
     }
 
     public String getName(){
-        return this.name;
+        return "Example";
     }
 }

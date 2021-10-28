@@ -23,7 +23,7 @@ repositories {
 dependencies {
     // Testing
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.8.1'
     testImplementation 'org.mockito:mockito-core:3.12.4'
     testImplementation 'org.hamcrest:hamcrest:2.2'
     //  testImplementation 'com.tngtech.java:junit-dataprovider:1.13.1'
@@ -65,4 +65,10 @@ testlogger {
     showSkippedStandardStreams true
     showFailedStandardStreams true
     logLevel 'lifecycle'
+}
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
 }
