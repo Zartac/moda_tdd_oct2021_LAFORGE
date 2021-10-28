@@ -1,6 +1,7 @@
 package moda_tdd_oct2021_LAFORGE;
 
 import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.*;
@@ -8,11 +9,15 @@ import static org.hamcrest.Matchers.*;
 
 public class DictionaryTest {
 
-    @Before
+    Dictionary dict;
+
+    @BeforeEach
     public void initialize () {
-        Dictionary dict = new Dictionary("Example");
+        dict = new Dictionary("Example");
+        dict.addTranslation("contre", "against");
+        dict.addTranslation("pour","for");
+        dict.addTranslation("pour","non");
     }
-    Dictionary dict = new Dictionary("Example");
     @Test
     public void testDictionaryName() {
         assertThat(dict.getName(), equalTo("Example"));
@@ -23,11 +28,14 @@ public class DictionaryTest {
     }
     @Test
     public void testOneTranslation() {
-        dict.addTranslation("contre", "against");
-        dict.addTranslation("pour","for");
-        dict.addTranslation("pour","non");
         assertThat(dict.getTranslation("contre"), containsInAnyOrder("against"));
+    }
+    @Test
+    public void testMultipleTransalation(){
         assertThat(dict.getTranslation("pour"), containsInAnyOrder("for", "non"));
+    }
+    @Test
+    public void testTranslationInverse(){
         assertThat(dict.translationInverse("for"), equalTo("pour"));
         assertThat(dict.translationInverse("non"), equalTo("pour"));
     }
