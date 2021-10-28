@@ -21,6 +21,8 @@ repositories {
 }
 
 dependencies {
+    implementation 'junit:junit:4.13.1'
+
     // Testing
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.8.1'
