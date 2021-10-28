@@ -39,4 +39,12 @@ public class Dictionary {
         }
         return l;
     }
+
+    public String translationInverse(String name) {
+        String rtr = "a retourner";
+            for (Map.Entry<String, List<String>> map : this.translations.entrySet()) {
+                if(map.getValue() != null && map.getValue().contains(name)) rtr = map.getKey();
+        }
+        return rtr;
+    }
 }

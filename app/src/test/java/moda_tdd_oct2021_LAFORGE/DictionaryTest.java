@@ -26,9 +26,9 @@ public class DictionaryTest {
         dict.addTranslation("contre", "against");
         dict.addTranslation("pour","for");
         dict.addTranslation("pour","non");
-        //dict.addTranslation("pour", "in the goal of");
         assertThat(dict.getTranslation("contre"), containsInAnyOrder("against"));
         assertThat(dict.getTranslation("pour"), containsInAnyOrder("for", "non"));
-        //assertThat(dict.getTranslation("pour"), equalTo("in the goal of"));
+        assertThat(dict.translationInverse("for"), equalTo("pour"));
+        assertThat(dict.translationInverse("non"), equalTo("pour"));
     }
 }
