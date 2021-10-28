@@ -9,4 +9,8 @@ public class Dictionary {
     public String getName(){
         return this.name;
     }
+    public boolean isEmpty(){
+        if(this!=null) return false;
+        return true;
+    }
 }
